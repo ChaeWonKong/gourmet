@@ -1,15 +1,22 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
-import { CardSection } from "./common";
+import { Card, CardSection, Button } from "./common";
+import ListItem from "./ListItem";
 
 class MapList extends Component {
   render() {
     const { mapListContainer, textStyle } = styles;
     return (
       <View style={mapListContainer}>
-        <CardSection>
-          <Text style={textStyle}>가츠3.3</Text>
-        </CardSection>
+        <Card>
+          <CardSection>
+            <Text style={textStyle}>가츠3.3</Text>
+          </CardSection>
+
+          <CardSection>
+            <ListItem />
+          </CardSection>
+        </Card>
       </View>
     );
   }
@@ -18,8 +25,6 @@ class MapList extends Component {
 const styles = {
   mapListContainer: {
     marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
     flex: 1
   },
   textStyle: {
