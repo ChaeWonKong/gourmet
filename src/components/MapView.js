@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { WebView, View } from "react-native";
-import MapList from "./MapList";
+// import MapList from "./MapList";
 
 class MapView extends Component {
   render() {
@@ -14,7 +14,7 @@ class MapView extends Component {
           style={webViewContainer}
           onLoadProgress={e => console.log(e.nativeEvent.progress)}
         />
-        <MapList />
+        {/* <MapList /> */}
       </View>
     );
   }
